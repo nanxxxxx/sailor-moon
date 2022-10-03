@@ -1,3 +1,137 @@
-body {
-    background: #0face8;
+body, html {
+    background-color: #fff;
+    font-weight: bold;
+    font-family: 'Luxurious Roman', cursive;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0;
 }
+
+h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Metamorphous', cursive;
+    margin: 15px 0;
+}
+
+h2 {
+    color: #ffffbc;
+    font-family: 'Metamorphous', cursive;
+    margin: 0;
+}
+
+h3{
+    color: #ffffbc;
+    font-size: 25px;
+    margin: 10px 0 15px;
+}
+
+h4{
+    color: #ffffbc;
+    margin: 0;
+}
+
+.sailor-banner {
+    background-color: #f6aac1;
+    font-family: 'Signika Negative', cursive;
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 50px 20px;
+    text-shadow: 0 0 10px #9c405c;
+}
+
+.warpper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+a.cta {
+    background-color: #5ccaf6;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Signika Negative', cursive;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: inline-block;
+    text-shadow: none;
+    box-shadow: 0 0 10px #b96880;
+}
+
+a.cta.alt {
+
+}
+
+button.cta {
+
+}
+
+button.cta.alt {
+
+}
+
+.character1 {
+    background: url(../img/sailor-chibi.png) no-repeat 0 0;
+    background-size: 100%;
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    z-index: 1;
+    top: 250px;
+    right: 550px;
+}
+
+.character2 {
+    background: url(../img/sailor-duo.png) no-repeat 0 0;
+    background-size: 100%;
+    width: 250px;
+    height: 430px;
+    box-shadow: 20px 20px #ffffbc;
+    position: absolute;
+    top: 150px;
+    right: 300px;
+}
+
+.character3 {
+    background: url(../img/sailor-moon.webp) no-repeat 0 0;
+    background-size: 100%;
+    width: 500px;
+    height: 1000px;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: -90px;
+}
+
+.character4 {
+    background: url(../img/all2.ng) no-repeat 0 0;
+    background-size: 100%;
+    width: 600px;
+    height: 1000px;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: -100px;
+}
+
+
+
+/*
+<div class="sailor-banner">
+<div class="warpper">
+    <h4>Nanxxxx presents</h4>
+    <h1>The Pretty Guardian<br>
+        Sailor Moon<br></h1>
+    <h3>Guardians destined to save Earth<br>
+        from the forces of evil!</h3>
+        <a class="cta alt" href="#story">Read More</a>
+</div>
+<div class="character1"></div>
+<div class="character2"></div>
+<div class="character3"></div>
+</div>
+*/
+
+
