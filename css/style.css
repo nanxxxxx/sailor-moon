@@ -36,9 +36,12 @@ h4{
     background-color: #f6aac1;
     font-family: 'Signika Negative', cursive;
     box-sizing: border-box;
+    min-height: auto;
     height: 100vh;
     padding: 50px 20px;
     text-shadow: 0 0 10px #9c405c;
+    position: relative;
+    overflow: hidden;
 }
 
 .warpper {
@@ -73,47 +76,56 @@ button.cta.alt {
 }
 
 .character1 {
-    background: url(../img/sailor-chibi.png) no-repeat 0 0;
+    background: url(../img/sailor-moon.webp) no-repeat 0 0;
     background-size: 100%;
-    width: 200px;
-    height: 400px;
+    width: 600px;
+    height: 800px;
     position: absolute;
-    z-index: 1;
-    top: 250px;
-    right: 550px;
+    z-index: 2;
+    top: 166px;
+    right: 100px;
 }
 
 .character2 {
-    background: url(../img/sailor-duo.png) no-repeat 0 0;
+    background: url(../img/sailor-mercury.webp) no-repeat 0 0;
     background-size: 100%;
-    width: 250px;
-    height: 430px;
-    box-shadow: 20px 20px #ffffbc;
+    width: 220px;
+    height: 730px;
     position: absolute;
-    top: 150px;
-    right: 300px;
+    z-index: 1;
+    top: 100px;
+    right: 380px;
 }
 
 .character3 {
-    background: url(../img/sailor-moon.webp) no-repeat 0 0;
+    background: url(../img/sailor-jupiter.png) no-repeat 0 0;
     background-size: 100%;
-    width: 500px;
-    height: 1000px;
+    width: 330px;
+    height: 800px;
     position: absolute;
-    z-index: 1;
-    top: 0px;
-    right: -90px;
+    top: 50px;
+    right: 380px;
 }
 
 .character4 {
-    background: url(../img/all2.ng) no-repeat 0 0;
+    background: url(../img/sailor-mars.png) no-repeat 0 0;
     background-size: 100%;
-    width: 600px;
+    width: 250px;
     height: 1000px;
     position: absolute;
     z-index: 1;
-    top: 10px;
-    right: -100px;
+    top: 120px;
+    right: 130px;
+}
+
+.character5 {
+    background: url(../img/sailor-venus.webp) no-repeat 0 0;
+    background-size: 100%;
+    width: 250px;
+    height: 1000px;
+    position: absolute;
+    top: 50px;
+    right: 10px;
 }
 
 
