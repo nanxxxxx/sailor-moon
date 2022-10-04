@@ -1,7 +1,6 @@
 body, html {
-    background-color: #fff;
-    font-weight: bold;
-    font-family: 'Luxurious Roman', cursive;
+    background-color: #a0e0fb;
+    font-family: 'Signika Negative', cursive;
     letter-spacing: 1px;
     padding: 0;
     margin: 0;
@@ -10,26 +9,34 @@ body, html {
 h1 {
     color: #fff;
     font-size: 50px;
-    font-weight: bold;
     font-family: 'Metamorphous', cursive;
     margin: 15px 0;
 }
 
 h2 {
-    color: #ffffbc;
+    font-size: 50px;
+    font-weight: 800;
     font-family: 'Metamorphous', cursive;
-    margin: 0;
+    text-align: center;
+    margin: 30px 0;
+    position: relative;
 }
 
-h3{
+h3 {
     color: #ffffbc;
     font-size: 25px;
     margin: 10px 0 15px;
 }
 
-h4{
+h4 {
     color: #ffffbc;
     margin: 0;
+}
+
+p {
+    font-size: 25px;
+    margin: 30px 0;
+    line-height: 1.8em;
 }
 
 .sailor-banner {
@@ -39,18 +46,19 @@ h4{
     min-height: auto;
     height: 100vh;
     padding: 50px 20px;
-    text-shadow: 0 0 10px #9c405c;
+    margin: 0;
+    text-shadow: 0 0 10px #803048;
     position: relative;
     overflow: hidden;
 }
 
-.warpper {
+.wrapper {
     width: 960px;
     margin: 0 auto;
 }
 
 a.cta {
-    background-color: #5ccaf6;
+    background-color: #fc5486;
     color: #fff;
     font-size: 20px;
     font-weight: bold;
@@ -63,45 +71,37 @@ a.cta {
     box-shadow: 0 0 10px #b96880;
 }
 
-a.cta.alt {
-
-}
-
-button.cta {
-
-}
-
-button.cta.alt {
-
+a.cta:hover {
+    box-shadow: 0 0 20px #803048;
 }
 
 .character1 {
     background: url(../img/sailor-moon.webp) no-repeat 0 0;
     background-size: 100%;
     width: 600px;
-    height: 800px;
+    height: 700px;
     position: absolute;
-    z-index: 2;
     top: 166px;
     right: 100px;
+    z-index: 2;
 }
 
 .character2 {
     background: url(../img/sailor-mercury.webp) no-repeat 0 0;
     background-size: 100%;
     width: 220px;
-    height: 730px;
+    height: 700px;
     position: absolute;
-    z-index: 1;
     top: 100px;
     right: 380px;
+    z-index: 1;
 }
 
 .character3 {
     background: url(../img/sailor-jupiter.png) no-repeat 0 0;
     background-size: 100%;
     width: 330px;
-    height: 800px;
+    height: 700px;
     position: absolute;
     top: 50px;
     right: 380px;
@@ -111,39 +111,228 @@ button.cta.alt {
     background: url(../img/sailor-mars.png) no-repeat 0 0;
     background-size: 100%;
     width: 250px;
-    height: 1000px;
+    height: 700px;
     position: absolute;
-    z-index: 1;
-    top: 120px;
+    top: 100px;
     right: 130px;
+    z-index: 1;
 }
 
 .character5 {
     background: url(../img/sailor-venus.webp) no-repeat 0 0;
     background-size: 100%;
     width: 250px;
-    height: 1000px;
+    height: 700px;
     position: absolute;
     top: 50px;
     right: 10px;
 }
 
+nav {
+    color: #fff;
+    font-weight: 900;
+    font-family: 'Metamorphous', cursive;
+    line-height: 1em;
+    height: 70px;
+    z-index: 1;
+    background-color: #23394f;
+    box-shadow: 0 5px 10px #11568f;
+    position: sticky;
+    top: 0;
+}
 
+nav img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -25px;
+    margin-left: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+nav span {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -7.5px;
+    margin-left: 100px;
+}
+
+nav a:visited {
+    color: #fff;
+}
+
+nav a:hover {
+    text-shadow: 0 0 15px #ffffbc;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 0;
+    margin: 0;
+    display: block;
+    float: right;
+}
+
+nav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 1em;
+    display: block;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 25px 10px;
+    margin: 0 20px 0 0;
+}
+
+.sailor-story {
+    padding: 80px 0;
+}
+
+h2::before {
+    content: '';
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    background: url(../img/icon.png) no-repeat 0 0;
+    background-size: 50px 50px;
+    transform: rotate(10deg);
+}
+
+h2::after {
+    content: '';
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    background: url(../img/icon.png) no-repeat 0 0;
+    background-size: 50px 50px;
+    transform: rotate(190deg);
+}
+
+.center {
+    text-align: center;
+}
+
+a.alt {
+    box-shadow: 0 0 10px #368acf;
+}
+
+a.alt:hover {
+    box-shadow: 0 0 20px #11568f;
+}
+
+.highlight {
+    background-color: #ffffbc;
+    color: #fc5486;
+    font-weight: 900;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.seperator {
+
+}
+
+.sailor-guadians {
+
+}
+
+.nb-list {
+    background-color: #ffffbc;
+    color: #fff;
+    font-weight: 900;
+    font-family: 'Metamorphous', cursive;
+    width: 470px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    float: left;
+    padding: 20px 20px 0 20px;
+    margin: 10px 20px 20px 0;
+    
+}
+
+.nb-list li {
+    height: 70px;
+    border-radius: 10px;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    padding: 5px 20px;
+    box-sizing: border-box;
+}
+
+.nb-list li.mercury {
+    background-color: #2581cd;
+}
+
+.nb-list li.none {
+    background-color: #b5ac7e;
+}
+
+.nb-list li.mars {
+    background-color: #e41d2e;
+}
+
+.nb-list li.jupiter {
+    background-color: #009051;
+}
+
+.nb-list li.venus {
+    background-color: #ff9625;
+}
+
+.nb-list li.chibi {
+    background-color: #ff6d6d;
+}
+
+.nb-list li.tuxedo {
+    background-color: #281d30;
+}
 
 /*
-<div class="sailor-banner">
-<div class="warpper">
-    <h4>Nanxxxx presents</h4>
-    <h1>The Pretty Guardian<br>
-        Sailor Moon<br></h1>
-    <h3>Guardians destined to save Earth<br>
-        from the forces of evil!</h3>
-        <a class="cta alt" href="#story">Read More</a>
-</div>
-<div class="character1"></div>
-<div class="character2"></div>
-<div class="character3"></div>
-</div>
+<div class="seperator">
+
+    </div>
+    <div class="sailor-guardians wrapper" id="guardians">
+        <ul class="nb-list">
+            <li class="mercury">Ami Mizuno</li>
+            <li class="none">&nbsp;</li>
+            <li class="mars favourite">Rei Hino</li>
+            <li class="jupiter">Makoto Kino</li>
+            <li class="venus">Minako Aino</li>
+            <li class="chibi">Mamoru Chiba</li>
+            <li class="tuxedo">Tuxedo Mask</li>
+        </ul>
+        <h2>Other Guardians</h2>
+        <p>They encounter the studious Ami Mizuno, who awakens as Sailor Mercury; 
+            Rei Hino, a local Shinto shrine maiden who awakens as Sailor Mars; 
+            Makoto Kino, a tall and strong transfer student who awakens as Sailor Jupiter; 
+            and Minako Aino, a young aspiring idol who had awakened as Sailor Venus 
+            a few months prior, accompanied by her talking feline companion Artemis.
+        </p>
+        <p>
+            Additionally, they befriend Mamoru Chiba, a high school student who assists 
+            them on occasion as Tuxedo Mask.
+        </p>
+
+    </div>
+    <div class="seperator">
 */
 
-
+.gif {
+    width: 45%;
+    float: left;
+}
