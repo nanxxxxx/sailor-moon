@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&family=Metamorphous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&family=Metamorphous&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="sailor-banner">
         <div class="wrapper">
@@ -16,7 +19,7 @@
                 Sailor Moon<br></h1>
             <h3>Guardians destined to save Earth<br>
                 from the forces of evil!</h3>
-                <a class="cta" href="#story">Read more</a>
+            <a class="cta" href="#story">Read more</a>
         </div>
         <div class="character1"></div>
         <div class="character2"></div>
@@ -29,7 +32,7 @@
         <a href="#"><img src="img/logo.png"><span>Sailor Moon</span></a>
 
         <ul>
-            <li><a href="#">Sign Up</a></li>
+            <li><a href="#javascript:()" onclick="showPopup();">Sign Up</a></li>
             <li><a href="#guardians">Guardians</a></li>
             <li><a href="#story">The Story</a></li>
         </ul>
@@ -37,86 +40,101 @@
     <div id="story"></div>
     <div class="sailor-story wrapper">
         <h2>The beginning of the story</h2>
-        <p>One day, a middle-school student named 
-            <span class="highlight">Usagi Tsukino</span> befriends 
-            <span class="highlight">Luna</span> a talking black cat who gives 
-            her a magical brooch enabling her to transform into Sailor Moon: 
-            a soldier destined to save Earth from the forces of evil. 
-            Luna and Usagi assemble a team of fellow Sailor Guardians 
+        <p>One day, a middle-school student named
+            <span class="highlight">Usagi Tsukino</span> befriends
+            <span class="highlight">Luna</span> a talking black cat who gives
+            her a magical brooch enabling her to transform into Sailor Moon:
+            a soldier destined to save Earth from the forces of evil.
+            Luna and Usagi assemble a team of fellow Sailor Guardians
             to find their princess and the Silver Crystal.
         </p>
-        <div class="center"><a class="cta alt">Sign Me Up!</a></div>
+        <div class="center">
+            <img src="img/sailor-story1.png" class="small">
+            <img src="img/sailor-story2.png" class="small">
+            <br><br>
+            <a class="cta alt" onclick="showPopup();">Sign Me Up!</a>
+        </div>
     </div>
 
-    <div class="seperator">
+    <hr class="seperator">
 
-    </div>
     <div class="sailor-guardians wrapper" id="guardians">
-        <h2>Other Guardians</h2>
+        <h2>Guardians</h2>
         <ul class="nb-list">
-            <li class="mercury">Ami Mizuno</li>
+            <li class="mars">Rei Hino</li>
             <li class="none">&nbsp;</li>
-            <li class="mars favourite">Rei Hino</li>
+            <div><img src="img/wand.png" class="wand"></div>
+            <li class="venus favourite">Minako Aino</li>
             <li class="jupiter">Makoto Kino</li>
-            <li class="venus">Minako Aino</li>
+            <li class="mercury">Ami Mizuno</li>
             <li class="chibi">Mamoru Chiba</li>
             <li class="tuxedo">Tuxedo Mask</li>
         </ul>
-        <p>They encounter the studious Ami Mizuno, who awakens as Sailor Mercury; 
-            Rei Hino, a local Shinto shrine maiden who awakens as Sailor Mars; 
-            Makoto Kino, a tall and strong transfer student who awakens as Sailor Jupiter; 
-            and Minako Aino, a young aspiring idol who had awakened as Sailor Venus 
+        <p>They encounter the studious <span class="highlight">Ami Mizuno</span>
+            who awakens as Sailor Mercury; <span class="highlight">Rei Hino</span>
+            a local Shinto shrine maiden who awakens as Sailor Mars;
+            <span class="highlight">Makoto Kino</span> a tall and strong transfer student who awakens as Sailor Jupiter;
+            and <span class="highlight">Minako Aino</span> a young aspiring idol who had awakened as Sailor Venus
             a few months prior, accompanied by her talking feline companion Artemis.
         </p>
         <p>
-            Additionally, they befriend Mamoru Chiba, a high school student who assists 
+            Additionally, they befriend <span class="highlight">Mamoru Chiba</span> a high school student who assists
             them on occasion as Tuxedo Mask.
-        </p>
+        </p><br>
+    </div>
 
-    </div>
-    <div class="seperator">
-        
-    </div>
+    <hr class="seperator">
+
     <div class="wrapper">
-        <img src="img/all5.gif">
-        <!--
-        <img src="img/sailor-moon1.gif" class="gif">
-        <img src="img/sailor-mercury1.gif" class="gif">
-        <img src="img/sailor-mars1.gif" class="gif">
-        <img src="img/sailor-venus1.gif" class="gif">-->
+        <h2>Gallery</h2>
+        <img src="img/gallery1.gif" class="gallery"><span class="heart">&#10084;</span>
+        <img src="img/gallery2.gif" class="gallery"><span class="heart">&#10084;</span>
+        <img src="img/gallery3.gif" class="gallery"><span class="heart">&#10084;</span>
+        <img src="img/gallery4.gif" class="gallery"><span class="heart"></span>
     </div>
 
-    <footer>
+    <hr>
+
+    <footer class="wrapper">
         Made by nanxxxxx
     </footer>
 
-    <div class="popup">
+    <div class="popup" id="popup">
         <div class="blanket"></div>
         <div class="content">
+            <hr class="seperator">
             <h2>Fill In Your Details</h2>
-            <form action="">
-                <div class="form-item">
-                    <label>Your First Name</label>
-                    <input type="text" placeholder="Usagi">
+            <form class="container" action="">
+                <div class="inner-container">
+                    <div class="form-item">
+                        <label>Your First Name</label>
+                        <input type="text" placeholder="Usagi">
+                    </div>
+                    <div class="form-item">
+                        <label>Your Last Name</label>
+                        <input type="text" placeholder="Tsukino">
+                    </div>
                 </div>
-                <div class="form-item">
-                    <label>Your Last Name</label>
-                    <input type="text" placeholder="Tsukino">
+                <div class="inner-container">
+                    <div class="form-item">
+                        <label>Your Favourite Character</label>
+                        <input type="text" placeholder="Sailor Mars">
+                    </div>
+                    <div class="form-item">
+                        <label>Your Astrological Sign</label>
+                        <input type="text" placeholder="Scorpio">
+                    </div>
                 </div>
-                <div class="form-item">
-                    <label>Your Favourite Character</label>
-                    <input type="text" placeholder="Sailor Mars">
+                <br><br>
+                <div class="inner-container">
+                    <button class="cta alt">I Want to Join</button>
+                    <button class="close" onclick="hidePopup();">&#10006;</button>
                 </div>
-                <div class="form-item">
-                    <label>Your Astrological Sign</label>
-                    <input type="text" placeholder="Scorpio">
-                </div>
-                <button class="cta">I Want to Join!</button>
-
             </form>
         </div>
-            <button class="close">Close x</button>
-        </div>
     </div>
+<script src="script.js" type="text/javascript"></script>
+
 </body>
+
 </html>
