@@ -374,7 +374,7 @@ footer {
 .popup.show {
     display: block;
 }
-.content hr, h2 {
+.content hr, .content h2 {
     margin-bottom: 20px;
 }
 
@@ -469,35 +469,3 @@ footer {
     color: #ffffbc;
     text-shadow: 0 0 10px #b96880;
 }
-
-
-/*
-<div class="popup">
-        <div class="blanket"></div>
-        <div class="content">
-            <h2>Fill In Your Details</h2>
-            <form action="">
-                <div class="form-item">
-                    <label>Your First Name</label>
-                    <input type="text" placeholder="Usagi">
-                </div>
-                <div class="form-item">
-                    <label>Your Last Name</label>
-                    <input type="text" placeholder="Tsukino">
-                </div>
-                <div class="form-item">
-                    <label>Your Favourite Character</label>
-                    <input type="text" placeholder="Sailor Mars">
-                </div>
-                <div class="form-item">
-                    <label>Your Astrological Sign</label>
-                    <input type="text" placeholder="Scorpio">
-                </div>
-                <button class="cta">I Want to Join!</button>
-
-            </form>
-        </div>
-            <button class="close">Close x</button>
-        </div>
-    </div>
-*/
